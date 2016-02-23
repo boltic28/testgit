@@ -1,16 +1,91 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
-	<title> off road </title>
+	<title> My first page </title>
+	<!-- Descriction of the ball-->
+	<style>
+    #field {
+      width: 400px;
+      height: 200px;
+      border: 5px groove black;
+      background-color: #00FF00;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    #ball {
+      position: absolute;
+      left: 50;
+      top: 100;
+      width: 40px;
+      height: 40px;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -o-transition: all 1s;
+      -ms-transition: all 1s;
+      transition: all 1s;
+    }
+  </style>
 	</head>
     <body>
-        <!-- ���������� �������� -->
-		<h1> hello world </h1>
-		<h1> hello world 1</h1>
-		<h1> hello world 2</h1>
-		<h1> hello world 3</h1>
-		<h1> hello world 4</h1>
-		<p> lf asjkdsglu</p>
+		<div align='center'> <h1> <font color='red'>Hello world </font></h1></div>
+		<br>
+		<br>
+		<hr color='gray'>
+		<p> now will be open js </p>
+		<p> ... opening ... </p>
+		<script src='js/first.html'></script>
+		
+		<p> script was closed </p>
+		<p> change background color </p>
+		
+		<script src='js/second.html'></script>
+		<script src='js/third.html'></script>
+		<hr color='gray'>
+		<br>
+		<div>
+		
+		<form border='2px'>
+		<p>login:  <input type='text' value='input your login'></p>
+		<p>passw:  <input type='password'></p>
+		<p>		<input type='button' value='OK' onclick="alert('нажата кнопочка')">
+				<input type='submit' value='Cancel' onclick=''></p>
+		</form>
+		</div>
+		<hr color='gray'>
+		<br>
+		<p>Buttons</p>
+		
+		<input value="Push me" onclick="alert('Клик!')" type="button">
+		
+		<input id="elem" type="button" value="Нажми меня" />
+			<script>
+				elem.onclick = function() {
+				alert( 'Спасибо' );
+				};
+			</script>
+		
+		<input type="button" value="Нажми меня" id="elem">
+
+		<script>
+			elem.onclick = click(event);
+			
+			function click(event) {
+			alert(event.type);
+			}
+		</script>
+		
+		<hr color='gray'>
+		
+		<div id="field">
+			<img src="https://js.cx/clipart/ball.svg" id="ball">
+		</div>
+		
+		<script src='js/ball.html'></script>
+		<hr color='gray'>
+		
+		
 		
     </body>
 </html>
